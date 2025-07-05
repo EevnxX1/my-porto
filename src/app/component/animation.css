@@ -1,0 +1,13 @@
+@keyframes hover-navbar {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.hover-navbar {
+    animation: hover-navbar 0.3s ease-in-out infinite forwards;
+}
+
