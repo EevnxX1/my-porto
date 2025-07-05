@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "./components/animation.css";
+@import "./component/animation.css";
 
 :root {
   --background: #ffffff;

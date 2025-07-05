@@ -8,6 +8,6 @@
 }
 
 .hover-navbar {
-    animation: hover-navbar 0.3s ease-in-out infinite forwards;
+    animation: hover-navbar 0.3s ease-in-out;
 }
 
