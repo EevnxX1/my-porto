@@ -1,0 +1,21 @@
+.meter-style::-webkit-meter-bar {
+    background: white;
+}
+.meter-style::-webkit-meter-optimum-value {
+    background: forestgreen;
+}
+.meter-style:-moz-meter-optimum::-moz-meter-bar {
+  background: forestgreen;
+}
+.meter-style::-webkit-meter-suboptimum-value {
+    background: gold;
+}
+.meter-style:-moz-meter-sub-optimum::-moz-meter-bar {
+  background: gold;
+}
+.meter-style::-webkit-meter-even-less-good-value {
+    background: crimson;
+}
+.meter-style:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background: crimson;
+}

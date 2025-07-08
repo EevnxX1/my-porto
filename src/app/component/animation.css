@@ -11,3 +11,19 @@
     animation: hover-navbar 0.3s ease-in-out;
 }
 
+@keyframes hover-bigger {
+    from {
+        transform: scale(1);
+        background-color: oklch(92% 0.004 286.32);
+    }
+    to {
+        transform: scale(1.05);
+        background-color: black;
+        color: white;
+    }
+}
+
+.hover-bigger {
+    animation: hover-bigger 0.4s ease-in-out forwards;
+}
+
