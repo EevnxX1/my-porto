@@ -30,8 +30,10 @@ export default function Contact() {
       } else {
         toast.error('Gagal mengirim pesan.', { id: toastId })
       }
-    } catch (_err: any) {
-        void _err;
+    } catch (err: unknown) {
+        if (err instanceof Error) {
+            console.error(err.message)
+        }
         toast.error('Terjadi kesalahan!', { id: toastId })
     }
   }
