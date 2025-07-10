@@ -36,12 +36,12 @@ export default function Contact() {
   }
     return(
         <main className="py-20 bg-black/70">
-            <div className="flex flex-col gap-y-20 w-[1400px] max-2xl:w-[1200px] max-xl:w-[1000px] max-lg:w-[800px] m-auto">
+            <div className="flex flex-col gap-y-20 w-[1400px] max-[1540px]:w-[1200px] max-[1300px]:w-[1000px] max-[1060px]:w-[800px] max-[860px]:w-[90%] m-auto">
                 <div className="flex flex-col gap-y-2">
                     <h1 className={clsx('text-5xl', montserrat.className)}>MyContact</h1>
                     <p className={clsx(montserrat.className)}>Disini adalah tempat informasi alamat kontak saya, dan tempat <br /> mengirimkan pesan jika anda berminat untuk saya magang di tempat anda.</p>
                 </div>
-                <section className="flex justify-between">
+                <section className="flex max-[630px]:flex-col justify-between max-[630px]:gap-y-10">
                     <div>
                         <div className="flex items-center gap-x-2">
                             <Image
@@ -53,7 +53,7 @@ export default function Contact() {
                             ></Image>
                             <h1 className={clsx('text-3xl font-semibold', montserrat.className)}>Address</h1>
                         </div>
-                        <ul className="flex flex-col gap-y-3 ml-14 max-2xl:text-xs">
+                        <ul className="flex flex-col gap-y-3 ml-14 max-[1540px]:text-xs">
                             <li
                             >Jl. Pancuran No.19, Kota Cirebon, Jawa barat, Indonesia.</li>
                             <li
@@ -98,7 +98,7 @@ export default function Contact() {
                         <div className="border-r border-b border-white w-[190px] pb-3">
                             <h1 className={clsx('text-3xl', montserrat.className)}>Contact Me</h1>
                         </div>
-                        <form onSubmit={handleSubmit} className="flex flex-col w-[800px] max-xl:w-[600px] max-lg:w-[420px] gap-y-5">
+                        <form onSubmit={handleSubmit} className="flex flex-col w-[800px] max-[1300px]:w-[600px] max-[1060px]:w-[420px] max-[860px]:w-[300px] max-[630px]:w-full gap-y-5">
                             <input type="text" 
                             value={form.name}
                             onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -119,7 +119,7 @@ export default function Contact() {
                              ></textarea>
                              <button
                              type="submit"
-                             className="bg-[#DC143C] ml-10 w-[130px] h-[50px] text-xl cursor-pointer"
+                             className="bg-[#DC143C] ml-10 w-[130px] max-[860px]:w-[100px] h-[50px] max-[860px]:h-[45px] text-xl cursor-pointer"
                              >Send</button>
                         </form>
                     </div>

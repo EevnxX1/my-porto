@@ -25,42 +25,42 @@ export default function Navbar() {
                 <span className="w-4 h-4 bg-yellow-600 rounded-full"></span>
                 <span className="w-4 h-4 bg-green-600 rounded-full"></span>
             </div>
-            <div className="w-[90%] h-[95%] m-auto bg-black flex flex-col gap-y-40 rounded-3xl">
+            <div className="w-[90%] h-[95%] max-[860px]:h-[92%] m-auto bg-black flex flex-col gap-y-40 max-[860px]:gap-y-20 max-[500px]:gap-y-14 rounded-3xl">
                 <div className="flex justify-between items-center p-10">
-                    <h1 className={clsx('text-4xl font-semibold', montserrat.className)}>MyNavbar</h1>
+                    <h1 className={clsx('text-4xl max-[500px]:text-2xl font-semibold', montserrat.className)}>MyNavbar</h1>
                     <a
                     href='#'
-                    className="text-5xl"
+                    className="text-5xl max-[500px]:text-4xl"
                     >X</a>
                 </div>
-                <section className="text-3xl flex flex-col">
+                <section className="text-3xl max-[860px]:text-2xl flex flex-col">
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C]"
+                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyHome</p>
                     </a>
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C]"
+                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MySkill</p>
                     </a>
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C]"
+                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyProject</p>
                     </a>
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C]"
+                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyExperience</p>
                     </a>
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C]"
+                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyContact</p>
                     </a>
@@ -68,18 +68,18 @@ export default function Navbar() {
             </div>        
         </div>
         {/* navbar mobile */}
-        <div className="flex justify-between items-center text-white w-[1400px] max-2xl:w-[1200px] max-xl:w-[1000px] max-lg:w-[800px] max-[860px]:w-[90%] m-auto h-[12vh]">
+        <div className="flex justify-between items-center text-white w-[1400px] max-[1540px]:w-[1200px] max-[1300px]:w-[1000px] max-[1060px]:w-[800px] max-[860px]:w-[90%] m-auto h-[12vh]">
             {/* position white */}
             <div className="absolute z-[-2] right-0 w-[200px] h-[200px] rounded-full blur-3xl bg-white"></div>
             <div className="absolute z-[-2] left-0 top-72 w-[200px] h-[200px] rounded-full blur-3xl bg-white"></div>
             {/* position white */}
             <div>
-                <h1 className={clsx(montserrat.className, 'text-3xl max-xl:text-2xl max-lg:text-xl font-medium')}>Miftahul Huda</h1>
+                <h1 className={clsx(montserrat.className, 'text-3xl max-[1300px]:text-2xl max-[1060px]:text-xl max-[860px]:text-3xl max-[500px]:text-2xl font-medium')}>Miftahul Huda</h1>
             </div>
             <a
             href={'#nav-mobile'}
             >
-                <div className="flex flex-col gap-y-3 w-[50px] min-[860px]:hidden">
+                <div className="flex flex-col gap-y-3 w-[50px] max-[500px]:w-[45px] min-[860px]:hidden">
                     <span className="w-full border border-white"></span>
                     <span className="w-full border border-white"></span>
                     <span className="w-full border border-white"></span>
@@ -89,7 +89,7 @@ export default function Navbar() {
                 <Link
                 onMouseEnter={() => setHoverNav(true)}
                 onMouseLeave={() => setHoverNav(false)}
-                className="link-hover text-xl max-2xl:text-lg max-lg:text-[16px]"
+                className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
                 href={''}
                 >MyHome
@@ -100,7 +100,7 @@ export default function Navbar() {
                 <Link
                 onMouseEnter={() => setHoverNav2(true)}
                 onMouseLeave={() => setHoverNav2(false)}
-                className="link-hover text-xl max-2xl:text-lg max-lg:text-[16px]"
+                className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
                 href={'#Myskill'}
                 >MySkill
@@ -111,7 +111,7 @@ export default function Navbar() {
                 <Link
                 onMouseEnter={() => setHoverNav3(true)}
                 onMouseLeave={() => setHoverNav3(false)}
-                className="link-hover text-xl max-2xl:text-lg max-lg:text-[16px]"
+                className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
                 href={''}
                 >MyExperience
@@ -122,7 +122,7 @@ export default function Navbar() {
                 <Link
                 onMouseEnter={() => setHoverNav4(true)}
                 onMouseLeave={() => setHoverNav4(false)}
-                className="link-hover text-xl max-2xl:text-lg max-lg:text-[16px]"
+                className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
                 href={''}
                 >MyProject
@@ -133,7 +133,7 @@ export default function Navbar() {
                 <Link
                 onMouseEnter={() => setHoverNav5(true)}
                 onMouseLeave={() => setHoverNav5(false)}
-                className="link-hover text-xl max-2xl:text-lg max-lg:text-[16px]"
+                className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
                 href={''}
                 >MyMessage
