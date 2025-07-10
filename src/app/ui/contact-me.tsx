@@ -106,23 +106,23 @@ export default function Contact() {
                             value={form.name}
                             onChange={(e) => setForm({ ...form, name: e.target.value })}
                             placeholder="Name" 
-                            className="h-[50px] ml-10 bg-[#1D1D1D] px-5"/>
+                            className="h-[50px] ml-10 max-[450px]:ml-2 bg-[#1D1D1D] px-5"/>
                             <input type="email" 
                             value={form.email}
                             onChange={(e) => setForm({ ...form, email: e.target.value })}
                             placeholder="Email" 
-                            className="h-[50px] ml-10 bg-[#1D1D1D] px-5"/>
+                            className="h-[50px] ml-10 max-[450px]:ml-2 bg-[#1D1D1D] px-5"/>
                             <textarea 
                              id=""
                              value={form.message}
                              onChange={(e) => setForm({ ...form, message: e.target.value })}
                              rows={8}
                              placeholder="Message"
-                             className="resize-none ml-10 bg-[#1D1D1D] px-5 py-2"
+                             className="resize-none ml-10 max-[450px]:ml-2 bg-[#1D1D1D] px-5 py-2"
                              ></textarea>
                              <button
                              type="submit"
-                             className="bg-[#DC143C] ml-10 w-[130px] max-[860px]:w-[100px] h-[50px] max-[860px]:h-[45px] text-xl cursor-pointer"
+                             className="bg-[#DC143C] ml-10 max-[450px]:ml-2 w-[130px] max-[860px]:w-[100px] h-[50px] max-[860px]:h-[45px] text-xl cursor-pointer"
                              >Send</button>
                         </form>
                     </div>

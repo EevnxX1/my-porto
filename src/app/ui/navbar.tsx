@@ -18,13 +18,13 @@ export default function Navbar() {
         {/* navbar mobile */}
         <div 
         id="nav-mobile"
-        className="fixed opacity-0 pointer-events-none w-full h-[100vh] bg-white z-50 target:opacity-100 target:pointer-events-auto">
+        className="fixed opacity-0 pointer-events-none w-full max-[630px]:w-screen h-[100vh] bg-white z-50 target:opacity-100 target:pointer-events-auto">
             <div className="flex gap-x-3 w-[90%] m-auto pl-4 py-3">
                 <span className="w-4 h-4 bg-red-600 rounded-full"></span>
                 <span className="w-4 h-4 bg-yellow-600 rounded-full"></span>
                 <span className="w-4 h-4 bg-green-600 rounded-full"></span>
             </div>
-            <div className="w-[90%] h-[95%] max-[860px]:h-[92%] m-auto bg-black flex flex-col gap-y-40 max-[860px]:gap-y-20 max-[500px]:gap-y-14 rounded-3xl">
+            <div className="w-[90%] h-[95%] max-[860px]:h-[92%] m-auto bg-black flex flex-col gap-y-40 max-[860px]:gap-y-20 max-[500px]:gap-y-10 rounded-3xl">
                 <div className="flex justify-between items-center p-10">
                     <h1 className={clsx('text-4xl max-[500px]:text-2xl font-semibold', montserrat.className)}>MyNavbar</h1>
                     <a
@@ -35,31 +35,31 @@ export default function Navbar() {
                 <section className="text-3xl max-[860px]:text-2xl flex flex-col">
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
+                    className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyHome</p>
                     </a>
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
+                    className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MySkill</p>
                     </a>
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
+                    className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyProject</p>
                     </a>
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
+                    className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyExperience</p>
                     </a>
                     <a
                     href=''
-                    className="p-10 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
+                    className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyContact</p>
                     </a>
