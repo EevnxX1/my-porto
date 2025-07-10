@@ -12,7 +12,7 @@ export default function Introduce() {
                     <div 
                     // data-aos="fade-right" 
                     className={clsx('text-7xl max-[1540px]:text-6xl max-[1300px]:text-5xl max-[1060px]:text-4xl max-[860px]:text-5xl max-[500px]:text-3xl max-[800px]:text-4xl font-semibold absolute max-[1540px]:w-[850px] w-[1000px] max-[630px]:pl-3 z-10', montserrat.className)}>
-                        I'm Miftahul Huda <br />
+                        I&#39;m Miftahul Huda <br />
                         <p className="text-[#DC143C]">A Information Technology</p>
                         In University CIC
                     </div>

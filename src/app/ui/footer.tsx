@@ -17,7 +17,7 @@ export default function Footer() {
                         </div>
                         <div className={clsx('flex max-[630px]:justify-between gap-x-5 max-[860px]:gap-x-2 max-[630px]:gap-x-7 border-t-2 pr-5', montserrat.className)}>
                             <div className="border-2 h-fit rounded-full py-1 px-2 mt-[-2px] ml-[-15px]">
-                                <p className="text-md max-[1300px]:text-sm max-[1060px]:text-xs font-semibold">FOUNDER'S NAME</p>
+                                <p className="text-md max-[1300px]:text-sm max-[1060px]:text-xs font-semibold">FOUNDER&#39;S NAME</p>
                             </div>
                             <h1 className="text-6xl max-[1300px]:text-5xl max-[1060px]:text-3xl max-[630px]:text-2xl mt-5 max-[1060px]:mt-2">Miftahul Huda</h1>
                         </div>
