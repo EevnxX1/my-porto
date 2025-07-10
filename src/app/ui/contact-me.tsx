@@ -31,6 +31,7 @@ export default function Contact() {
         toast.error('Gagal mengirim pesan.', { id: toastId })
       }
     } catch (_err: any) {
+        void _err;
         toast.error('Terjadi kesalahan!', { id: toastId })
     }
   }
