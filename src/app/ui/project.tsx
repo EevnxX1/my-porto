@@ -2,20 +2,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { montserrat } from "../component/font";
-import { poppins } from "../component/font";
 import clsx from "clsx";
-import { useState } from "react";
 
 export default function Project() {
     return(
         <div className="bg-black/70">
-        <main className="w-[1400px] m-auto py-20 flex flex-col gap-y-10">
+        <main className="w-[1400px] max-2xl:w-[1200px] max-xl:w-[1000px] max-lg:w-[800px] m-auto py-20 flex flex-col gap-y-10">
             <div className="flex flex-col gap-y-2">
                 <h1 className={clsx('text-5xl', montserrat.className)}>MyProject</h1>
                 <p className={clsx('', montserrat.className)}>Disini adalah project yang <br /> sudah saya kerjakan selama saya kuliah</p>
             </div>
-            <div className="flex flex-col border-t-2 border-l-2 border-white p-8">
-                <h1 className={clsx('text-5xl border-r-2 border-b-2 border-white w-52 pb-3', montserrat.className)}>Website</h1>
+            <div className="flex flex-col border-t-2 border-l-2 border-white p-8 max-lg:p-5">
+                <h1 className={clsx('text-5xl max-lg:text-4xl border-r-2 border-b-2 border-white w-52 max-lg:w-40 pb-3', montserrat.className)}>Website</h1>
                 <div className="flex flex-col gap-y-10">
                     <div className="self-center text-center flex flex-col gap-y-3">
                         <h1 className={clsx('text-4xl', montserrat.className)}>Faza Citra Production</h1>
@@ -28,6 +26,8 @@ export default function Project() {
                     </div>
                     <div className="flex flex-wrap gap-10 justify-center">
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="100" 
                         id=""
                         target="_blank"
                         href={'/web_faza/Dashboard Page.png'}
@@ -40,6 +40,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={"/web_faza/Book's Page.png"}
@@ -52,6 +54,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={"/web_faza/Store Page.png"}
@@ -64,6 +68,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="400"
                         id=""
                         target="_blank"
                         href={'/web_faza/Coming Soon Page.png'}
@@ -76,6 +82,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="500"
                         id=""
                         target="_blank"
                         href={'/web_faza/Detail Books.png'}
@@ -88,6 +96,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="600"
                         id=""
                         target="_blank"
                         href={'/web_faza/Layanan.png'}
@@ -100,6 +110,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="700"
                         id=""
                         target="_blank"
                         href={'/web_faza/About Us - Page.png'}
@@ -114,8 +126,8 @@ export default function Project() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col border-t-2 border-l-2 border-white p-8 mt-20">
-                <h1 className={clsx('text-5xl border-r-2 border-b-2 border-white w-52 pb-3', montserrat.className)}>Website</h1>
+            <div className="flex flex-col border-t-2 border-l-2 border-white p-8 max-lg:p-5 mt-20">
+                <h1 className={clsx('text-5xl max-lg:text-4xl border-r-2 border-b-2 border-white w-52 max-lg:w-40 pb-3', montserrat.className)}>Website</h1>
                 <div className="flex flex-col gap-y-10">
                     <div className="self-center text-center flex flex-col gap-y-3">
                         <h1 className={clsx('text-4xl', montserrat.className)}>Goa Sunyaragi</h1>
@@ -128,6 +140,8 @@ export default function Project() {
                     </div>
                     <div className="flex flex-wrap gap-8 justify-center">
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="100"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 25.png'}
@@ -140,6 +154,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={"/web_goa_sunyaragi/image 26.png"}
@@ -152,6 +168,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={"/web_goa_sunyaragi/image 27.png"}
@@ -164,6 +182,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="100"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 28.png'}
@@ -176,6 +196,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 29.png'}
@@ -188,6 +210,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 30.png'}
@@ -200,6 +224,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="100"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 31.png'}
@@ -212,6 +238,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 32.png'}
@@ -224,6 +252,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 33.png'}
@@ -238,8 +268,8 @@ export default function Project() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col border-t-2 border-l-2 border-white p-8 mt-20">
-                <h1 className={clsx('text-5xl border-r-2 border-b-2 border-white w-52 pb-3', montserrat.className)}>Mobile Apps</h1>
+            <div className="flex flex-col border-t-2 border-l-2 border-white p-8 max-lg:p-5 mt-20">
+                <h1 className={clsx('text-5xl max-lg:text-4xl border-r-2 border-b-2 border-white w-52 max-lg:w-40 pb-3', montserrat.className)}>Mobile Apps</h1>
                 <div className="flex flex-col gap-y-10">
                     <div className="self-center text-center flex flex-col gap-y-3">
                         <h1 className={clsx('text-4xl', montserrat.className)}>Graha Store</h1>
@@ -253,6 +283,7 @@ export default function Project() {
                     </div>
                     <div className="flex flex-wrap gap-8 justify-center">
                         <Link
+                        data-aos="fade-down"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_1.png'}
@@ -265,6 +296,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="100"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_2.png'}
@@ -277,6 +310,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_3.png'}
@@ -289,6 +324,7 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_4.png'}
@@ -301,6 +337,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_5.png'}
@@ -313,6 +351,8 @@ export default function Project() {
                             ></Image>
                         </Link>
                         <Link
+                        data-aos="fade-down"
+                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_6.png'}

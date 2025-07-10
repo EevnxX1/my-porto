@@ -8,6 +8,7 @@ import Skill from "./ui/skill";
 import Project from "./ui/project";
 import Experience from "./ui/experience";
 import Contact from "./ui/contact-me";
+import Footer from "./ui/footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Project/>
       <Experience/>
       <Contact/>
+      <Footer/>
     </section>
   );
 }

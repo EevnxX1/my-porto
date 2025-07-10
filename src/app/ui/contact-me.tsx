@@ -3,11 +3,40 @@ import Image from "next/image";
 import Link from "next/link";
 import { montserrat } from "../component/font";
 import clsx from "clsx";
+import { useState } from 'react'
+import { toast } from "react-hot-toast";
 
 export default function Contact() {
+  const [form, setForm] = useState({ name: '', email: '', message: '' })
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    const toastId = toast.loading("Mengirim pesan...");
+
+    try {
+      const res = await fetch('/api/sendMessage', {
+        method: 'POST',
+        body: JSON.stringify(form),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+
+      const result = await res.json()
+      console.log(result);
+      if (result.result === 'Success') {
+        toast.success('Pesan berhasil dikirim!', { id: toastId })
+        setForm({ name: '', email: '', message: '' })
+      } else {
+        toast.error('Gagal mengirim pesan.', { id: toastId })
+      }
+    } catch (err) {
+        toast.error('Terjadi kesalahan!', { id: toastId })
+    }
+  }
     return(
         <main className="py-20 bg-black/70">
-            <div className="flex flex-col gap-y-20 w-[1400px] m-auto">
+            <div className="flex flex-col gap-y-20 w-[1400px] max-2xl:w-[1200px] max-xl:w-[1000px] max-lg:w-[800px] m-auto">
                 <div className="flex flex-col gap-y-2">
                     <h1 className={clsx('text-5xl', montserrat.className)}>MyContact</h1>
                     <p className={clsx(montserrat.className)}>Disini adalah tempat informasi alamat kontak saya, dan tempat <br /> mengirimkan pesan jika anda berminat untuk saya magang di tempat anda.</p>
@@ -24,12 +53,17 @@ export default function Contact() {
                             ></Image>
                             <h1 className={clsx('text-3xl font-semibold', montserrat.className)}>Address</h1>
                         </div>
-                        <ul className="flex flex-col gap-y-3 ml-14">
-                            <li>Jl. Pancuran No.19, Kota Cirebon, Jawa barat, Indonesia.</li>
-                            <li>miftamartin1@gmail.com</li>
-                            <li>miftahul.huda.ti.22@cic.ac.id</li>
-                            <li>+62 857-9712-7694</li>
-                            <li>
+                        <ul className="flex flex-col gap-y-3 ml-14 max-2xl:text-xs">
+                            <li
+                            >Jl. Pancuran No.19, Kota Cirebon, Jawa barat, Indonesia.</li>
+                            <li
+                            >miftamartin1@gmail.com</li>
+                            <li
+                            >miftahul.huda.ti.22@cic.ac.id</li>
+                            <li
+                            >+62 857-9712-7694</li>
+                            <li
+                            >
                                 <Link
                                 href={'https://github.com/EevnxX1'}
                                 target="_blank"
@@ -38,21 +72,47 @@ export default function Contact() {
                                     https://github.com/EevnxX1
                                 </Link>
                             </li>
+                            <li
+                            >
+                                <Link
+                                href={'https://www.instagram.com/evnx_mifta/'}
+                                target="_blank"
+                                className="hover:underline"
+                                >
+                                    https://www.instagram.com/evnx_mifta/
+                                </Link>
+                            </li>
+                            <li
+                            >
+                                <Link
+                                href={'https://www.instagram.com/geniusstudioo_/'}
+                                target="_blank"
+                                className="hover:underline"
+                                >
+                                    https://www.instagram.com/geniusstudioo_/
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="border-t border-l border-white p-4 flex flex-col gap-y-14">
                         <div className="border-r border-b border-white w-[190px] pb-3">
                             <h1 className={clsx('text-3xl', montserrat.className)}>Contact Me</h1>
                         </div>
-                        <form action="" className="flex flex-col w-[800px] gap-y-5">
+                        <form onSubmit={handleSubmit} className="flex flex-col w-[800px] max-xl:w-[600px] max-lg:w-[420px] gap-y-5">
                             <input type="text" 
+                            value={form.name}
+                            onChange={(e) => setForm({ ...form, name: e.target.value })}
                             placeholder="Name" 
                             className="h-[50px] ml-10 bg-[#1D1D1D] px-5"/>
                             <input type="email" 
+                            value={form.email}
+                            onChange={(e) => setForm({ ...form, email: e.target.value })}
                             placeholder="Email" 
                             className="h-[50px] ml-10 bg-[#1D1D1D] px-5"/>
                             <textarea 
                              id=""
+                             value={form.message}
+                             onChange={(e) => setForm({ ...form, message: e.target.value })}
                              rows={8}
                              placeholder="Message"
                              className="resize-none ml-10 bg-[#1D1D1D] px-5 py-2"
