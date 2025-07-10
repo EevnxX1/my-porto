@@ -3,8 +3,7 @@ import { montserrat } from "../component/font";
 import { roboto } from "../component/font";
 import Link from "next/link";
 import clsx from "clsx";
-import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
 
