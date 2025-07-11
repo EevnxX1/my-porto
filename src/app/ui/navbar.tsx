@@ -24,12 +24,12 @@ export default function Navbar() {
                 <span className="w-4 h-4 bg-yellow-600 rounded-full"></span>
                 <span className="w-4 h-4 bg-green-600 rounded-full"></span>
             </div>
-            <div className="w-[90%] h-[95%] max-[860px]:h-[92%] m-auto bg-black flex flex-col gap-y-40 max-[860px]:gap-y-20 max-[500px]:gap-y-10 rounded-3xl">
-                <div className="flex justify-between items-center p-10">
-                    <h1 className={clsx('text-4xl max-[500px]:text-2xl font-semibold', montserrat.className)}>MyNavbar</h1>
+            <div className="w-[90%] h-[95%] max-[860px]:h-[92%] m-auto bg-black flex flex-col gap-y-40 max-[860px]:gap-y-20 max-[500px]:gap-y-10 max-[380px]:gap-y-4 rounded-3xl">
+                <div className="flex justify-between items-center p-10 max-[380px]:p-8">
+                    <h1 className={clsx('text-4xl max-[500px]:text-2x max-[380px]:text-xl font-semibold', montserrat.className)}>MyNavbar</h1>
                     <a
                     href='#'
-                    className="text-5xl max-[500px]:text-4xl"
+                    className="text-5xl max-[500px]:text-4xl max-[380px]:text-3xl"
                     >X</a>
                 </div>
                 <section className="text-3xl max-[860px]:text-2xl flex flex-col">
@@ -78,7 +78,7 @@ export default function Navbar() {
             <a
             href={'#nav-mobile'}
             >
-                <div className="flex flex-col gap-y-3 w-[50px] max-[500px]:w-[45px] min-[860px]:hidden">
+                <div className="flex flex-col gap-y-3 max-[380px]:gap-y-2 w-[50px] max-[380px]:w-[40px] max-[500px]:w-[45px] min-[860px]:hidden">
                     <span className="w-full border border-white"></span>
                     <span className="w-full border border-white"></span>
                     <span className="w-full border border-white"></span>

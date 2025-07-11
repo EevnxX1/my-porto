@@ -9,11 +9,11 @@ export default function Introduce() {
         id="home"
         className="bg-black/70">
         <main className="w-[1400px] max-[1540px]:w-[1200px] max-[1300px]:w-[1000px] max-[1060px]:w-[800px] max-[860px]:w-[90%] max-md:w-full m-auto h-[88vh] flex max-[860px]:flex-col justify-between">
-            <section className="max-[860px]:absolute max-[860px]:z-20 max-[860px]:bottom-[50px] max-[630px]:bottom-[120px] max-[500px]:bottom-[90px] max-[860px]:order-2 flex flex-col gap-y-10 max-[1540px]:gap-y-8 max-[1060px]:gap-y-6 max-[860px]:gap-y-7 max-[630px]:gap-y-8 max-[1540px]:mt-20 mt-24 max-[1060px]:mt-24 max-[860px]:w-full">
-                <div className="relative h-[220px] max-[1540px]:h-[180px] max-[1300px]:h-[150px] max-[1060px]:h-[120px] max-[860px]:h-[180px] max-[800px]:h-[150px] max-[500px]:h-[100px] max-[450px]:h-[90px]">
+            <section className="max-[860px]:absolute max-[860px]:z-20 max-[860px]:bottom-[50px] max-[630px]:bottom-[120px] max-[500px]:bottom-[90px] max-[450px]:bottom-[50px] max-[380px]:bottom-[11vh] max-[860px]:order-2 flex flex-col gap-y-10 max-[1540px]:gap-y-8 max-[1060px]:gap-y-6 max-[860px]:gap-y-7 max-[630px]:gap-y-8 max-[1540px]:mt-20 mt-24 max-[1060px]:mt-24 max-[860px]:w-full">
+                <div className="max-[380px]:flex max-[380px]:justify-center relative max-[380px]:right-2 h-[220px] max-[1540px]:h-[180px] max-[1300px]:h-[150px] max-[1060px]:h-[120px] max-[860px]:h-[180px] max-[800px]:h-[150px] max-[500px]:h-[100px] max-[450px]:h-[90px] max-[380px]:h-[160px]">
                     <div 
                     data-aos="fade-right" 
-                    className={clsx('text-7xl max-[1540px]:text-6xl max-[1300px]:text-5xl max-[1060px]:text-4xl max-[860px]:text-5xl max-[500px]:text-3xl max-[800px]:text-4xl max-[460px]:text-2xl max-[371px]:text-xl font-semibold absolute max-[1540px]:w-[850px] max-[500px]:w-[90%] w-[1000px] max-[630px]:pl-3 z-10', montserrat.className)}>
+                    className={clsx('max-[380px]:flex max-[380px]:flex-col max-[380px]:gap-y-2 max-[450px]:text-center text-7xl max-[1540px]:text-6xl max-[1300px]:text-5xl max-[1060px]:text-4xl max-[860px]:text-5xl max-[500px]:text-3xl max-[800px]:text-4xl max-[460px]:text-2xl max-[380px]:text-3xl font-semibold absolute max-[1540px]:w-[850px] max-[910px]:w-full max-[500px]:w-[90%] w-[1000px] max-[630px]:pl-3 z-10', montserrat.className)}>
                         I&#39;m Miftahul Huda <br />
                         <p className="text-[#DC143C]">A Information Technology</p>
                         In University CIC
@@ -59,7 +59,7 @@ export default function Introduce() {
                 </div>
             </section>
             <div 
-            className="max-[860px]:self-end max-[860px]:order-1 border-t-2 border-r-2 border-white p-3 h-[400px] mt-20 max-[1060px]:mt-16 max-[1540px]:mt-9 max-[860px]:mt-4 max-[630px]:mt-10">
+            className="max-[380px]:hidden max-[450px]:self-center max-[860px]:self-end max-[860px]:order-1 border-t-2 border-r-2 border-white p-3 h-[400px] mt-20 max-[1060px]:mt-16 max-[1540px]:mt-9 max-[860px]:mt-4 max-[630px]:mt-10">
                 <Image
                 data-aos="flip-left"
                 data-aos-delay="1400"
