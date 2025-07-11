@@ -6,7 +6,9 @@ import clsx from "clsx";
 
 export default function Project() {
     return(
-        <div className="bg-black/70">
+        <div 
+        id="project"
+        className="bg-black/70">
         <main className="w-[1400px] max-[1540px]:w-[1200px] max-[1300px]:w-[1000px] max-[1060px]:w-[800px] max-[860px]:w-[90%] m-auto py-20 flex flex-col gap-y-10">
             <div className="flex flex-col gap-y-2">
                 <h1 className={clsx('text-5xl', montserrat.className)}>MyProject</h1>
@@ -18,16 +20,10 @@ export default function Project() {
                     <div className="self-center text-center flex flex-col gap-y-3">
                         <h1 className={clsx('text-4xl', montserrat.className)}>Faza Citra Production</h1>
                         <p className="text-sm">Website ini saya kembangkan untuk <br /> umkm yang ingin menjual buku novelnya secara online.</p>
-                        <Link
-                        href={''}
-                        >
-                            <p className="underline">Klik disini untuk mengunjugi websitenya</p>
-                        </Link>
                     </div>
                     <div className="flex flex-wrap gap-10 justify-center">
                         <Link
-                        data-aos="fade-down"
-                        data-aos-delay="100" 
+                        data-aos="fade-down" 
                         id=""
                         target="_blank"
                         href={'/web_faza/Dashboard Page.png'}
@@ -41,7 +37,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={"/web_faza/Book's Page.png"}
@@ -55,7 +50,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={"/web_faza/Store Page.png"}
@@ -69,7 +63,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="400"
                         id=""
                         target="_blank"
                         href={'/web_faza/Coming Soon Page.png'}
@@ -83,7 +76,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="500"
                         id=""
                         target="_blank"
                         href={'/web_faza/Detail Books.png'}
@@ -97,7 +89,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="600"
                         id=""
                         target="_blank"
                         href={'/web_faza/Layanan.png'}
@@ -111,7 +102,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="700"
                         id=""
                         target="_blank"
                         href={'/web_faza/About Us - Page.png'}
@@ -132,16 +122,10 @@ export default function Project() {
                     <div className="self-center text-center flex flex-col gap-y-3">
                         <h1 className={clsx('text-4xl', montserrat.className)}>Goa Sunyaragi</h1>
                         <p className="text-sm">Website ini saya kembangkan agar orang yang mau berkunjung <br /> bisa memesan tiket dari online dan menjadwalkan tiketnya datang tanggal berapa.</p>
-                        <Link
-                        href={''}
-                        >
-                            <p className="underline">Klik disini untuk mengunjugi websitenya</p>
-                        </Link>
                     </div>
                     <div className="flex flex-wrap gap-8 justify-center">
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="100"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 25.png'}
@@ -155,7 +139,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={"/web_goa_sunyaragi/image 26.png"}
@@ -169,7 +152,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={"/web_goa_sunyaragi/image 27.png"}
@@ -183,7 +165,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="100"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 28.png'}
@@ -197,7 +178,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 29.png'}
@@ -211,7 +191,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 30.png'}
@@ -225,7 +204,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="100"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 31.png'}
@@ -239,7 +217,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 32.png'}
@@ -253,7 +230,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={'/web_goa_sunyaragi/image 33.png'}
@@ -274,12 +250,6 @@ export default function Project() {
                     <div className="self-center text-center flex flex-col gap-y-3">
                         <h1 className={clsx('text-4xl', montserrat.className)}>Graha Store</h1>
                         <p className="text-sm">Mobile Apps ini saya kembangkan agar umkm bisa berdagang lebih luas lagi dalam penjualan sepatu mereka.<br /> customer bisa memesan sepatu itu secara online.</p>
-                        <Link
-                        target="_blank"
-                        href={'https://github.com/EevnxX1/GrahaStore.git'}
-                        >
-                            <p className="underline">klik disini untuk melihat mobile appsnya <br /> (dikarekan tidak sempat untuk merilis versi apk, maka saya akan menampilkan codenya di github)</p>
-                        </Link>
                     </div>
                     <div className="flex flex-wrap gap-8 justify-center">
                         <Link
@@ -297,7 +267,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="100"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_2.png'}
@@ -311,7 +280,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_3.png'}
@@ -338,7 +306,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="200"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_5.png'}
@@ -352,7 +319,6 @@ export default function Project() {
                         </Link>
                         <Link
                         data-aos="fade-down"
-                        data-aos-delay="300"
                         id=""
                         target="_blank"
                         href={'/graha_store/mobile_6.png'}

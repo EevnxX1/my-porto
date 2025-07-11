@@ -18,7 +18,7 @@ export default function Navbar() {
         {/* navbar mobile */}
         <div 
         id="nav-mobile"
-        className="fixed opacity-0 pointer-events-none w-full max-[630px]:w-screen h-[100vh] bg-white z-50 target:opacity-100 target:pointer-events-auto">
+        className="fixed top-0 left-0 opacity-0 transform-none pointer-events-none w-full max-[630px]:w-screen h-screen bg-white z-[9999] transition-opacity duration-300 ease-in-out target:opacity-100 target:pointer-events-auto">
             <div className="flex gap-x-3 w-[90%] m-auto pl-4 py-3">
                 <span className="w-4 h-4 bg-red-600 rounded-full"></span>
                 <span className="w-4 h-4 bg-yellow-600 rounded-full"></span>
@@ -34,31 +34,31 @@ export default function Navbar() {
                 </div>
                 <section className="text-3xl max-[860px]:text-2xl flex flex-col">
                     <a
-                    href=''
+                    href='#home'
                     className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyHome</p>
                     </a>
                     <a
-                    href=''
+                    href='#skill'
                     className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MySkill</p>
                     </a>
                     <a
-                    href=''
+                    href='#project'
                     className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyProject</p>
                     </a>
                     <a
-                    href=''
+                    href='#experience'
                     className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyExperience</p>
                     </a>
                     <a
-                    href=''
+                    href='#contact'
                     className="p-10 max-[630px]:p-6 focus:bg-[#DC143C] max-[860px]:border max-[500px]:text-lg"
                     >
                         <p>MyContact</p>
@@ -90,7 +90,7 @@ export default function Navbar() {
                 onMouseLeave={() => setHoverNav(false)}
                 className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
-                href={''}
+                href={'#home'}
                 >MyHome
                 <span className={clsx("border-b w-full flex span-b", 
                     hoverNav ? "hover-navbar" : "scale-0"
@@ -100,7 +100,7 @@ export default function Navbar() {
                 onMouseEnter={() => setHoverNav2(true)}
                 onMouseLeave={() => setHoverNav2(false)}
                 className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
-                id=""
+                id="#skill"
                 href={'#Myskill'}
                 >MySkill
                 <span className={clsx("border-b w-full flex span-b", 
@@ -112,7 +112,7 @@ export default function Navbar() {
                 onMouseLeave={() => setHoverNav3(false)}
                 className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
-                href={''}
+                href={'#experience'}
                 >MyExperience
                 <span className={clsx("border-b w-full flex span-b", 
                     hoverNav3 ? "hover-navbar" : "scale-0"
@@ -123,7 +123,7 @@ export default function Navbar() {
                 onMouseLeave={() => setHoverNav4(false)}
                 className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
-                href={''}
+                href={'#project'}
                 >MyProject
                 <span className={clsx("border-b w-full flex span-b", 
                     hoverNav4 ? "hover-navbar" : "scale-0"
@@ -134,8 +134,8 @@ export default function Navbar() {
                 onMouseLeave={() => setHoverNav5(false)}
                 className="link-hover text-xl max-[1540px]:text-lg max-[1060px]:text-[16px]"
                 id=""
-                href={''}
-                >MyMessage
+                href={'#contact'}
+                >MyContact
                 <span className={clsx("border-b w-full flex span-b", 
                     hoverNav5 ? "hover-navbar" : "scale-0"
                 )}></span>

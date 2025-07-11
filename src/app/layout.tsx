@@ -1,12 +1,12 @@
 'use client'
 import "./globals.css";
-import Head from "next/head";
 import { inter } from "./component/font";
 import 'react-toastify/dist/ReactToastify.css';
+import { Toaster } from 'react-hot-toast'
+import Head from "next/head";
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 import { useEffect } from 'react'
-import { Toaster } from 'react-hot-toast'
 
 export default function RootLayout({
   children,
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init({ once: true })
   }, [])
 

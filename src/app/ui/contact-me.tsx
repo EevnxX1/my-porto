@@ -39,7 +39,9 @@ export default function Contact() {
   }
     return(
         <main className="py-20 bg-black/70">
-            <div className="flex flex-col gap-y-20 w-[1400px] max-[1540px]:w-[1200px] max-[1300px]:w-[1000px] max-[1060px]:w-[800px] max-[860px]:w-[90%] m-auto">
+            <div 
+            id="contact"
+            className="flex flex-col gap-y-20 w-[1400px] max-[1540px]:w-[1200px] max-[1300px]:w-[1000px] max-[1060px]:w-[800px] max-[860px]:w-[90%] m-auto">
                 <div className="flex flex-col gap-y-2">
                     <h1 className={clsx('text-5xl', montserrat.className)}>MyContact</h1>
                     <p className={clsx(montserrat.className)}>Disini adalah tempat informasi alamat kontak saya, dan tempat <br /> mengirimkan pesan jika anda berminat untuk saya magang di tempat anda.</p>
